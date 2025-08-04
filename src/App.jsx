@@ -8,11 +8,20 @@ function App() {
   return (
     <>
       <div>
+        {/* Two React Logos */}
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+
+      {/* Main Headings */}
       <h1>Vite + React</h1>
+      <h2 style={{ fontWeight: 'bold' }}>Hi This is GIT ACTION EXPERIMENT</h2>
+
+      {/* Counter Card */}
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -21,9 +30,6 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the React logo to learn more
-      </p>
     </>
   )
 }
